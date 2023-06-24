@@ -15,4 +15,4 @@ GIT_BRANCH="\\[\\033[1;30m\\]\$(git_branch)\\[\\033[00m\\]"
 
 # Set a two-line prompt. If accessing via ssh include 'ssh-session' message.
 if [[ -n "$SSH_CLIENT" ]]; then ssh_message="-ssh_session"; fi
-PS1="${GREEN}\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\W ${GIT_BRANCH} \n${CYAN}\$${ENDC} "
+PS1="\n${GREEN}\u ${WHITE}at ${YELLOW}\h${RED}${ssh_message} ${WHITE}in ${BLUE}\W ${GIT_BRANCH} \n${CYAN}\$${ENDC} "
